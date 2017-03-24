@@ -182,7 +182,7 @@
     self.fullButton.frame = CGRectMake(self.playerView.frame.size.width-44, self.playerView.frame.size.height-44, 44, 44);
     self.currentTime.frame = CGRectMake(self.playButton.frame.origin.x+self.playButton.frame.size.width+8, self.playerView.frame.size.height-44, 48, 44);
     self.totalTime.frame = CGRectMake(self.fullButton.frame.origin.x-56, self.playerView.frame.size.height-44, 48, 44);
-    self.bufferViewProgress.frame = CGRectMake(self.currentTime.frame.origin.x+self.currentTime.frame.size.width + 8, self.playerView.frame.size.height-21, self.playerView.frame.size.width-(self.currentTime.frame.origin.x+self.currentTime.frame.size.width)-8-self.totalTime.frame.size.width-8-self.fullButton.frame.size.width-8, 1);
+    self.bufferViewProgress.frame = CGRectMake(self.currentTime.frame.origin.x+self.currentTime.frame.size.width + 10, self.playerView.frame.size.height-21, self.playerView.frame.size.width-(self.currentTime.frame.origin.x+self.currentTime.frame.size.width)-8-self.totalTime.frame.size.width-8-self.fullButton.frame.size.width-8-4, 1);
     self.playSliderProgress.frame = CGRectMake(self.currentTime.frame.origin.x+self.currentTime.frame.size.width + 8, self.playerView.frame.size.height-35, self.playerView.frame.size.width-(self.currentTime.frame.origin.x+self.currentTime.frame.size.width)-8-self.totalTime.frame.size.width-8-self.fullButton.frame.size.width-8, 30);
 }
 - (void)updatePlayerWith:(NSURL *)url{
